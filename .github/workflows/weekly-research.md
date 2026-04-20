@@ -1,13 +1,14 @@
 ---
 description: |
-  This workflow performs research to  provides industry insights and competitive analysis.
+  This workflow performs research to provide industry insights and competitive analysis.
   Reviews recent code, issues, PRs, industry news, and trends to create comprehensive
   research reports. Covers related products, research papers, market opportunities,
   business analysis, and new ideas. Creates GitHub issues with findings to inform
   strategic decision-making.
 
 on:
-  schedule: daily
+  schedule:
+    - cron: "47 11 * * *"
   workflow_dispatch:
 
 permissions: read-all
