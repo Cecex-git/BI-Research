@@ -8,7 +8,7 @@ description: |
 
 on:
   schedule:
-    - cron: "47 11 * * *"
+    - cron: "0 7 * * 5" # 08:00 CET every Friday
   workflow_dispatch:
 
 permissions: read-all
